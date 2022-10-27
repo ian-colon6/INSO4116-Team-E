@@ -21,7 +21,7 @@ const ListItem = ({item, deleteItem, displayInfo}) => {
 const styles = StyleSheet.create({
   listItem:{
     padding:15,
-    backgroundColor:'#f8f8ff',
+    backgroundColor:'#00A300',
     borderBottomWidth: 1,
     borderColor:'#eee',
   },
@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
   },
   listItemText:{
     fontSize:18,
+    color:'white'
   }
 });
 

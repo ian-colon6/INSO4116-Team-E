@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     margin: 5,
   },
   btnText:{
-    color: 'darkslateblue',
+    color: 'darkgreen',
     fontSize: 20,
     textAlign:'center',
   }
