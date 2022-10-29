@@ -9,9 +9,9 @@ const RoundedButton = ({text, color, textColor, padding, action}) => {
         <TouchableOpacity onPress={action} style={{
             shadowColor: 'gray',
             shadowOpacity: 1,
-            shadowRadius: 2,
-            shadowOffset: {width: 0, height: 1},
-            marginTop: 10,
+            shadowRadius: 4,
+            shadowOffset: {width: 0, height: 2},
+            margin: 10,
             backgroundColor: color,
             padding: padding,
             borderRadius: 10
