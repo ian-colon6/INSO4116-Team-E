@@ -1,8 +1,13 @@
 import { React } from 'react';
-import { Platform, StyleSheet, Text, Button, View } from 'react-native';
+import { StyleSheet, Text, Button, View } from 'react-native';
+import CircularIconButton from '../library/CircularIconButton';
 import RoundedButton from '../library/RoundedButton';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import * as Linking from 'expo-linking';
 
-const SplashScreen = () => {
+const SplashScreen = ({navigation}) => {
+    const mainScreenURL = 'ims://app/main_screen';
     return  (
         <View style={styles.container}>
             <View style={styles.titleWrapper}>
@@ -22,6 +27,7 @@ const SplashScreen = () => {
                 text='Skip to Main View (Debug) >'
                 color='salmon'
                 padding={15}
+                action={() => navigation.navigate('Main')}
                 />
         </View>
     );
