@@ -24,7 +24,7 @@ const SplashScreen = ({navigation}) => {
                 color='steelblue'
                 />
             <RoundedButton
-                text='Skip to Main View (Debug) >'
+                text='Continue as a guest'
                 color='salmon'
                 padding={15}
                 action={() => navigation.navigate('Main')}

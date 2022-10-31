@@ -4,11 +4,12 @@ import React, { useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import CardRow from '../library/CardRow';
+import RoundedButton from '../library/RoundedButton';
 
 
 
 
-const MainScreen = () => {
+const MainScreen = ({navigation}) =>{
 
     const [alerts, setAlerts] = useState([
         {text: "Milk expired", key: 1},
@@ -44,8 +45,19 @@ const MainScreen = () => {
 
             <View style={styles.inventory}>
                 <Text style={styles.heading}>Inventory</Text>
-                <CardRow text='See items' flex={1}/>
-                <CardRow text='Shopping lists' flex={1}/>
+                <RoundedButton 
+                    text='Inventory' flex={1}
+                    color='#F9F9F9'
+                    textColor='black'
+                    padding={20}
+                    action={() => navigation.navigate('Inventory')}
+                    />
+                <RoundedButton 
+                    text='Shopping lists' flex={1}
+                    color='#F9F9F9'
+                    textColor='black'
+                    padding = {20}
+                    />
             </View>
 
 

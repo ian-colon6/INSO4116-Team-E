@@ -6,10 +6,12 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import * as Linking from 'expo-linking';
 import MainScreen from './screens/MainScreen';
+import InventoryScreen from './screens/InventoryScreen';
 
 const urlConfig = {
   screens: {
-    MainScreen: 'main_screen'
+    MainScreen: 'main_screen',
+    InventoryScreen: 'inventory_screen'
   }
 }
 
@@ -25,6 +27,7 @@ export default function App() {
       <Stack.Navigator>
           <Stack.Screen name='Welcome' component={SplashScreen}/>
           <Stack.Screen name='Main' component={MainScreen}/>
+          <Stack.Screen name='Inventory' component={InventoryScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
